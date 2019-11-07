@@ -1,0 +1,71 @@
+{% load staticfiles %}
+{% load app_filters %}
+    <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top justify-content-left">
+        <a class="navbar-brand" href={% url 'core:index' %}>
+            <img src="{% static 'img/logo/logo.PNG' %}" alt="Logo" style="width:200px;">
+        </a>
+        {% if user.is_authenticated %}
+            <p>Welcome: {{ user.first_name }} {{ user.last_name }}</p>
+        {% endif %}
+        <div class="row" >
+            <form class="form-inline" action="/action_page.php" style="margin-left: 700px">
+                <input class="form-control mr-sm-5" type="text" placeholder="Search">
+            </form>
+            <ul class="navbar-nav" >
+            {% if nav == 'home'%}
+                <li class="nav-item active" >
+                  <a class="nav-link" href="{% url 'core:index' %}">Home</a>
+                </li>
+            {% else %}
+               <li class="nav-item" >
+                  <a class="nav-link" href="{% url 'core:index' %}">Home</a>
+                </li>
+            {% endif %}
+            {% if nav == 'recipe'%}
+                <li class="nav-item active" >
+                  <a class="nav-link" href="{% url 'recipe:index' %}">Recipes</a>
+                </li>
+            {% else %}
+               <li class="nav-item" >
+                  <a class="nav-link" href="{% url 'recipe:index' %}">Recipes</a>
+                </li>
+            {% endif %}
+            {% if nav == 'moods'%}
+                <li class="nav-item active" >
+                  <a class="nav-link" href="#">Moods</a>
+                </li>
+            {% else %}
+               <li class="nav-item" >
+                  <a class="nav-link" href="#">Moods</a>
+                </li>
+            {% endif %}
+            {% if nav == 'tutorial'%}
+                <li class="nav-item active" >
+                  <a class="nav-link" href="{% url 'tutorial:index' %}">Tutorials</a>
+                </li>
+            {% else %}
+               <li class="nav-item" >
+                  <a class="nav-link" href="{% url 'tutorial:index' %}">Tutorials</a>
+                </li>
+            {% endif %}
+            {% if user.is_authenticated %}
+                <li class="nav-item" >
+                      <a class="nav-link" href={% url 'logout' %}>Logout</a>
+                </li>
+            {% else %}
+                {% if nav == 'login'%}
+                    <li class="nav-item active" >
+                      <a class="nav-link" href="{% url 'login' %}">Login</a>
+                    </li>
+                {% else %}
+                    <li class="nav-item" >
+                      <a class="nav-link" href="{% url 'login' %}">Login</a>
+                    </li>
+                {% endif %}
+            {% endif %}
+            {% if  request.user|has_group:'admin' %}<li class="nav-item"><a target="_blank" class="nav-link" href="/admin/">Admin</a></li>{% else %}{% endif %}
+
+            </ul>
+        </div>
+
+    </nav>

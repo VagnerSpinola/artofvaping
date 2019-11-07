@@ -1,0 +1,155 @@
+{% extends "tutorial/model.html" %}
+{% load staticfiles %}
+
+{% block body_main_content %}
+    <div class="container">
+        <h1>How to Make Vape Juice</h1>
+        <p>Those who have vaped for a long time may have grown tired of having to regularly spend money on e-liquid (or e-juice) to refill their vape pens. Some may even have ideas for
+            never-before-tried flavors. If this is you, it may be the time you learned the fine art of making your own e-liquid.</p>
+
+        <img src="{% static 'img/Tutorial/how_to_make.jpg' %}" style="width: 100%">
+
+        <h2>Ingredients to Make Vape Juice:</h2>
+        <p>There are five ingredients to make e-liquid namely VG, PG, flavor, diluted nicotine, and distilled water or vodka, though you may or may not use nicotine and vodka. At a bare minimum,
+            e-juice can be made with just a PG/VG base and flavoring.</p>
+
+        <h3>Propylene Glycol (PG)</h3>
+        <p>It’s the preferred base liquid of most DIY e juice makers, however, some may have allergies to PG. It’s a federally approved, colorless, odorless organic chemical compound used in a variety
+            of products including tobacco, foods, and more. It’s also used in some medicinal products which can be inhaled, injected into the bloodstream, used orally or topically.</p>
+
+        <h3>Vegetable Glycerol (VG)</h3>
+        <p>Similar to PG but a natural liquid extract derived from vegetables, VG is more viscous (thicker) and has a slight tinge of sweetness to it. While PG doesn’t really impact the overall flavor
+            but VG can, either in a good or bad way. It’s an FDA approved product used in foods, e-juices and even cosmetics. Most DIY e-juices use both PG and VG, as each brings unique characteristics
+            to the e-liquid. We’ll discuss how to make vape juice with them and how they actually impact the end product in a later section.</p>
+
+        <h3>Distilled Water or Vodka</h3>
+        <p>While not really crucial to the mix, this is generally used to thin out 100% VG mixes. Vodka gives added throat hit, as well, without having to add nicotine. If you don’t want to use vodka,
+            consider adding distilled water instead.</p>
+
+        <h3>Flavoring</h3>
+        <p>Flavors are available in a wide variety, but for better tasting e-liquid we recommend using flavors made particularly for inhaling instead of using the commonly used food flavorings. While
+            the usual mix requires about 10-20% flavoring, some are strong enough to require only 5%. Therefore, when using a certain flavor, make sure you read the labels and understand how it will
+            impact your mix.</p>
+
+        <h3>Nicotine Liquid</h3>
+        <p>You will use diluted nicotine liquid that can be in PG or VG-base, available in various strengths. For beginners trying out how to make vape juice, you can choose any nicotine strength between
+            8 to 24mg and then experiment with it to find your sweet spot. If you want an apples-to-apples comparison with nicotine found in tobacco cigarettes, consider the following table:
+            Be extremely careful when handling nicotine liquid and do not ingest it. This can lead to a nicotine overdose. Children are very receptive to the effects of nicotine and can easily
+            get sick or worse if they accidentally ingest it. Even a small amount can be deadly for a child. A 5mg dose killed this 15-month-old, for example.</p>
+
+        <table class="table table-borderless">
+            <thead>
+                  <tr>
+                    <th>Nicotine Level in Traditional Tobacco Cigarette</th>
+                    <th>Nicotine Level for E-Liquid (Milligrams)</th>
+                  </tr>
+            </thead>
+            <tbody>
+                  <tr>
+                        <td>Nicotine-free</td>
+                        <td>0</td>
+                  </tr>
+                  <tr>
+                        <td>Ultra-light</td>
+                        <td>8</td>
+                  </tr>
+                  <tr>
+                        <td>Light</td>
+                        <td>11</td>
+                  </tr>
+                  <tr>
+                        <td>Regular</td>
+                        <td>16</td>
+                  </tr>
+                  <tr>
+                        <td>Strong</td>
+                        <td>24</td>
+                  </tr>
+                  <tr>
+                        <td>Unfiltered</td>
+                        <td>36</td>
+                  </tr>
+            </tbody>
+        </table>
+        <h2>Mixing Supplies</h2>
+
+        <h3>Empty Plastic Bottles with Childproof Cap</h3>
+        <p>As a beginner, using plastic bottle is your best bet. You don’t want to use big containers or expensive bottles, which are a bigger investment. Also, you want to use clean equipment every
+            single time or you risk ruining your juice’s flavor with the residue from your previous experiments.
+            A fresh cheap bottle is a lot more cost effective and effective than an expensive, hard to clean container.</p>
+
+        <h3>Syringes</h3>
+        <p>For accurate measurements, get a separate syringe for each type of ingredient, mark the syringes and always use them for the same ingredient. Syringes can also come in handy if you’re using
+            bottles with small openings. While counting drops also works, but when you’re working with small quantities, even a tiny difference can have a big impact on the overall e-juice. Remember,
+            the volume of each drop depends on so many factors that there will always be some variation no matter how hard you try.</p>
+
+        <h3>Tissue Paper or Napkins</h3>
+        <p>The tissue paper is to wipe off any excess liquid that might spill. Even the best of us spills, so it’s better to be prepared, especially when learning how to make vape juice.</p>
+
+        <h3>Pair of Gloves</h3>
+        <p>Since you’ll be dealing with nicotine, it’s ideal to use gloves. Upon contact with skin, it can be absorbed by your body which can be hazardous or can cause a skin rash.
+
+            Hiding behind the stereotype of a minor deal spilled e-liquid can be very toxic, but nicotine is very easily absorbed through the skin.
+
+            Use good quality, powder-free, rubber gloves to avoid contamination of your e-liquid.</p>
+
+        <h3>Goggles/Face Shield</h3>
+        <p>While we highly recommend using gloves, you may use goggles to protect your eyes if you are planning to frequently make e juice. Highly concentrated nicotine juice can be extremely dangerous
+            for your eyes, and can even cause blindness. Only make this investment if you’re planning on making serious amounts of e juice.</p>
+
+
+        <h2>How to Make Vape Juice</h2>
+
+        <h3>Prepare Nicotine</h3>
+        <p>Here you’ll need some math skills to figure out the volume of nicotine required for the e-liquid to achieve the desired percentage. Since you’ll have diluted nicotine, use its strength in
+            milligrams and the overall volume of the e-juice to calculate the required amount of nicotine. You can also use an online calculator or smartphone app to make life easy.
+
+            Adding too much nicotine can be a mess up so add a little less than the amount recommended by your e-juice calculator or the e-juice recipe, then add to the mix according to taste after steeping.
+            If the nicotine level is enough for you, but you still want more throat hit, adding a few drops of vodka will help. It doesn’t take much; about one to five percent will be good enough.</p>
+
+        <h3>Prepare Flavor(s)</h3>
+        <p>This is where your skills and luck come in, especially if you want to make a new flavor. Also, this step can make or break the e-juice, and deserves your maximum consideration. You can either
+            use one
+            flavor or mix several different flavors. However, for beginners, we recommend starting with just one or two flavors and then go from there.
+
+            Trial and error is the only approach to making e liquids, but as a rule of thumb, add a little less flavor than what the e-juice calculator or the recipe recommends. It’s better to start
+            with less flavor than to ruin the entire batch by adding too much. After steeping, do a taste test and add flavoring according to taste. Unless you’re sure what you’re doing, never add
+            more flavoring agent than 10% of the total volume of the end product.
+
+            Also, artificial flavors are extremely complicated and can behave differently when used with other flavors or chemicals. For instance, if you added a recommended amount of flavor to your
+            e-liquid but don’t feel anything, adding too much flavoring will usually not help, or might even backfire by washing out the flavor. When you’re mixing flavorings, it becomes even more
+            complicated, as the final flavor can be totally different from what you expected.</p>
+
+        <h3>Prepare Base</h3>
+        <p>You can choose any VG/PG blend depending on your recipe, but usually, it’s between 50/50 and 80/20. Just remember that diluted nicotine usually contains some levels of PG or VG, so don’t
+            forget to take that volume into consideration. </p>
+
+        <h3>Mix the Blend</h3>
+        <p>When you’ve everything ready, mix it in a bottle and shake it, and I mean shake the heck out of it as most e-juices (especially high VG e-juices) are very thick, and need some shaking to
+            properly mix the ingredients.</p>
+
+        <h3>Steep</h3>
+        <p>To steep it or not, is a personal preference Most e-juices will taste much better when steeped, just like good, aged wine. You can try out your freshly made e-liquid after you’ve experimented
+            with how to make vape juice. If it tastes really good and is up to your expectations, you might want to skip this step. Basically nothing but oxidation of the components of your juice,
+            steeping is a process in which you leave the ready-to-vape e-juice sit for a while in a cool, dark place. There is no predefined period as how long the juice should be steeped, but it can
+            take a few days or even several months. Again the denser components will finally settle down at the bottom, so you’ll need to shake them every once in a while.
+
+        Ideally, you should leave the cap off and let oxygen play its trick and make the highly volatile fluids, such as alcohol, vaporize into the air. Some people sporadically put the bottles in
+            warm water, which can actually speed up the steeping process. Another technique involves using a coffee mug warmer or a slow cooker, which can steep the fluids in days instead of weeks.
+            However, in this case, you’ll need to frequently check the water level.
+
+        After steeping, not only flavor but also the color of the juice will change because of nicotine getting oxidized. Instead of a colorless or light pale-ish color, you might see a more alluring,
+            yellowish or even light brown color. In fact, a change in color is a sign of your juice being properly steeped. When it comes to steeping there is nothing absolute. For better steeping, you
+            need two things: patience and experimentation. The process is long and monotonous, but the outcome is worth the wait.</p>
+
+        <h2>Tips on Making a Great Tasting Vape Juice</h2>
+        <p> If you were to walk away with just one tip from this entire article, let it be this: take notes of every single measurement, and every single step you take in making an e-juice. Many users have expressed how they’ve once made the perfect mix but can never replicate it because they never took note of the ratios and amounts.
+            Go online, there are several social portals for e-juice recipe sharing where you can learn from others and share your great recipes.
+            Try to use flavorings made for inhaling instead of using the commonly used food flavorings.
+            If you are making e-juice for the first time, don’t make a lot neither make too little. Because making a lot of e-juice could prove to be an expensive disaster while making very little leaves a very little margin of error, as smaller variation in amount can have a greater impact.
+            If you want a great throat hit, add more PG.
+            If you want dense vapor clouds, but want a mild throat hit, add more VG.
+            E-liquids with high VG are better suited for sub-ohm vaping, as they not only offer bigger clouds but also VG, being more viscous, requires more heat from the vaporizer.
+            Handle nicotine safely. Make sure kids, as well as pets, don’t have access to your “laboratory”, because nicotine can be poisonous if ingested.</p>
+    </div>
+{% endblock %}

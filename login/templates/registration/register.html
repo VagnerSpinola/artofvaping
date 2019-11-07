@@ -1,0 +1,25 @@
+{% extends "core/home.html" %}
+{% load staticfiles %}
+
+{% block body_main %}
+      <div class="container" style="width: 100%">
+            <div class="jumbotron" style="width: 100%">
+                  {% if registered %}
+                        <p>Thank you for registering!<a href="{% url 'login' %}">Loggin</a></p>
+                  {% else %}
+                        <h1>Create your Account</h1>
+                        <h5>Just fill out the form.</h5>
+                        <hr>
+                         <br>
+                        <form enctype="multipart/form-data" method="POST">
+                              {% csrf_token %}
+                              {{ user_form.as_p }}
+                              {{ profile_form.as_p }}
+                            <hr>
+                            <br><br>
+                            <button class="btn btn-success" type="submit" name="" value="Register">Register</button>
+                        </form>
+                  {% endif %}
+            </div>
+      </div>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends "core/home.html" %}
+{% load staticfiles %}
+
+{% block body_main %}
+    <div class="container" style="background-color: white">
+        {% block body_main_content %}{% endblock %}<br><br>
+        {% include 'tutorial/advertise.html' %}<br><hr>
+        {% include 'tutorial/comments.html' %}
+    </div>
+{% endblock %}
